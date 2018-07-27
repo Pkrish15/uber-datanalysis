@@ -1,2 +1,4 @@
-# uber-datanalysis
-Uber Data Analysis - Not Complete Still Working in Progress
+# uber-datanalysis - WIP
+1) Implementation on Openshift <br>
+   oc new-project pk-zp
+   
