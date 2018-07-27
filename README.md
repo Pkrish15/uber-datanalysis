@@ -17,6 +17,13 @@
     http://apache-zeppelin-pk-zp.apps.dev39.openshift.opentlc.com/#/
     
  5) Import the JSON Notebook in the Zepplin Notebook <br> <br>
+    Currently it is in our GitHub URL <br>
+    https://raw.githubusercontent.com/Pkrish15/uber-datanalysis/master/Uber%20Data%20Analysis.json <br> <br>
+    
+ 6) Run the Zepplin Notebook at every stages, Please read the zepplin tutorial if required. <br> <br>
+ 
+ 
+    
  
     
  
