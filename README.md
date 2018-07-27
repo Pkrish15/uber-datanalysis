@@ -6,7 +6,24 @@
     --param=APPLICATION_NAME=apache-zeppelin \
     --param=GIT_URI=https://github.com/rimolive/zeppelin-notebooks.git \
     --param=ZEPPELIN_INTERPRETERS=md       <br><br>
+ 
+ 2) Create a PVC in the pod claiming 2GiB <br><br>
+ 3) Copy the Local Data to the Pod Directory using Rsync Command <br><br>
+     oc rsync /home/prakrish/workspace/uberdata-analysis/src/main/resources/data/  apache-zeppelin-2-f89tz:/data <br>
+     oc rsync src directory pod directory:/data This is a format <br> <br>
+ 
+ 4) Open the Zeppellin notebook <br> <br>
+    oc get route <br>
+    http://apache-zeppelin-pk-zp.apps.dev39.openshift.opentlc.com/#/
     
+ 5) Import the JSON Notebook in the Zepplin Notebook <br> <br>
+ 
+    
+ 
+    
+ 
+ 
+
    
 
 
