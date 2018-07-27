@@ -1,7 +1,7 @@
-# Uber-datanalysis - WIP
-#This Whole is Split into 2 Phases
-#First Phase is Uber-DataAnalysis using Spark MLLIB (KMeans Algorithms best suited)and Prediction using KMeans.
-#Second Phase is Rules Implementation using RHDM and Firing the rules to detect the Surge Prediction, it uses Kafka and Spark Streaming.
+# Uber-datanalysis and Prediction - First Phase
+#This Whole is Split into 2 Phases <br> <br>
+#First Phase is Uber-DataAnalysis using Spark MLLIB (KMeans Algorithms best suited)and Prediction using KMeans. <br>
+#Second Phase is Rules Implementation using RHDM and Firing the rules to detect the Surge Prediction, it uses Kafka and Spark Streaming.<br>
 1) Implementation on Openshift <br>
    a) oc new-project pk-zp <br> <br>
    b) oc create -f https://raw.githubusercontent.com/Pkrish15/uber-datanalysis/master/zeppelin-openshift.yaml <br> <br>
