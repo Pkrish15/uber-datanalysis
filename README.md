@@ -1,5 +1,5 @@
 # Data Discovery Phase  - First Phase
-#This Whole is Split into 2 Phases <br> <br>
+# This Whole is Split into 2 Phases <br> <br>
 #The example data set is Uber trip data, which FiveThirtyEight obtained from the NYC Taxi & Limousine Commission. In this example, we will discover the clusters of Uber data based on the longitude and latitude, then we will analyze the cluster centers by date/time. The data set has the following schema:
 
 The Data Set Schema
@@ -12,7 +12,7 @@ Base: The TLC base company affiliated with the Uber pickup
 2014-08-01 00:00:00,40.729,-73.9422,B02598
 
 
-#Second Phase is Rules Implementation using RHDM and Firing the rules to detect the Surge Prediction, it uses Kafka and Spark Streaming.<br>
+# Second Phase is Analytics using the Model which involves Rules Implementation using RHDM and Firing the rules to detect the Surge Prediction, it uses Kafka and Spark Streaming.<br>
 1) Implementation on Openshift <br>
    a) oc new-project pk-zp <br> <br>
    b) oc create -f https://raw.githubusercontent.com/Pkrish15/uber-datanalysis/master/zeppelin-openshift.yaml <br> <br>
@@ -36,8 +36,18 @@ Base: The TLC base company affiliated with the Uber pickup
     
  6) Run the Zepplin Notebook at every stages, Please read the zepplin tutorial if required. <br> <br>
  
-#  Spark Streaming and Rules Implementation - 2nd Phase (Work in Progress)
+#  Analytics using the model which involved Spark Streaming and Rules Implementation - 2nd Phase (Work in Progress)
 
+#  Detailed Explaination of the first phase - Data Discovery Phase
+
+1) Why this phase is needed? <br>
+   This phase is needed to study about the historical data, and observe the pattern recognition of the uber system which is needed. Based on this we can arrive a conclusion for better decision making and predictions.<br>
+ 
+ 2) What is analytics using the model? <br>
+   This is the second phase of the project,uses the model in production on live events, it still needed to do an analyis of historical data. <br>
+   
+   
+   
  
  
     
