@@ -45,7 +45,8 @@ Base: The TLC base company affiliated with the Uber pickup
  
  2) What is analytics using the model? <br>
    This is the second phase of the project,uses the model in production on live events, it still needed to do an analyis of historical data. <br>
-   
+![alt text](https://github.com/Pkrish15/spark-drools/blob/master/Screenshot%20from%202018-06-22%2014-42-22.png)<br>
+
    
    
  
