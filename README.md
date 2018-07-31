@@ -1,5 +1,5 @@
 # Data Discovery Phase  - First Phase
-# Second Phase is Analytics using the Model - 2nd Phase 
+# Analytics using the Data Model - Second Phase 
 It use Spark Streaming and Rules Implementation.WIP <br>
 #  Detailed Explaination of the first phase - Data Discovery Phase
 
