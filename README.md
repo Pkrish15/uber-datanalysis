@@ -83,6 +83,16 @@ How many pickups occured in each cluster? <br>
     https://raw.githubusercontent.com/Pkrish15/uber-datanalysis/master/Uber%20Data%20Analysis.json <br> <br>
     
  6) Run the Zepplin Notebook at every stages, Please read the zepplin tutorial if required. <br> <br>
+ 
+ # References 
+ https://mapr.com/blog/monitoring-real-time-uber-data-using-spark-machine-learning-streaming-and-kafka-api-part-1/ <br>
+ 
+ https://mapr.com/blog/monitoring-real-time-uber-data-using-spark-machine-learning-streaming-and-kafka-api-part-2/ <br>
+ 
+ https://www.youtube.com/watch?v=52zTo7bznXw <br>
+ 
+ https://www.youtube.com/watch?v=nncxYGD6m7E <br>
+ 
 
 
 
