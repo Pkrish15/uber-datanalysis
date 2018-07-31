@@ -83,6 +83,14 @@ Output, Cluster Centers are displayed on the Google Map <br>
 Further Analysis of cluster <br>
 ![alt text](https://github.com/Pkrish15/uber-datanalysis/blob/master/6.png)<br> <br>
 
+6) What are the Analysis Questions? <br>
+
+Which hour of the day and which cluster had highest number of pickups?<br>
+
+How many pickups occured in each cluster? <br>
+
+
+
 
 
 
