@@ -61,7 +61,7 @@ How many pickups occured in each cluster? <br>
 
 7) How can we deploy in OpenShift? <br>
 
-1) Implementation on Openshift <br>
+# Implementation on Openshift <br>
    a) oc new-project pk-zp <br> <br>
    b) oc create -f https://raw.githubusercontent.com/Pkrish15/uber-datanalysis/master/zeppelin-openshift.yaml <br> <br>
    c) oc new-app --template=$namespace/apache-zeppelin-openshift \
