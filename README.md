@@ -47,6 +47,56 @@ Base: The TLC base company affiliated with the Uber pickup
    This is the second phase of the project,uses the model in production on live events, it still needed to do an analyis of historical data. <br>
 ![alt text](https://github.com/Pkrish15/uber-datanalysis/blob/master/1.jpg)<br>
 
+3) What Algorithm choosed suitable for Data Analytics? <br>
+
+Clustering uses unsupervised algorithms, which do not have the outputs (labeled data) in advance. K-means is one of the most commonly used clustering algorithms that clusters the data points into a predefined number of clusters (k). Clustering using the K-means algorithm begins by initializing all the coordinates to k number of centroids. With every pass of the algorithm, each point is assigned to its nearest centroid based on some distance metric, which is usually Euclidean distance. The centroids are then updated to be the “centers” of all the points assigned to it in that pass. This repeats until there is a minimum change in the centers. <br>
+
+4) What is in the data set? <br>
+
+The Data Set Schema
+Date/Time: The date and time of the Uber pickup
+Lat: The latitude of the Uber pickup
+Lon: The longitude of the Uber pickup
+Base: The TLC base company affiliated with the Uber pickup
+​​The Data Records are in CSV format. An example line is shown below:
+
+2014-08-01 00:00:00,40.729,-73.9422,B02598 <br>
+
+5) How do we do it? <br>
+
+Load the data into a Spark Data Frame <br>
+
+![alt text](https://github.com/Pkrish15/uber-datanalysis/blob/master/2.png)<br> <br>
+
+Define Features Array <br>
+In order for the features to be used by a machine learning algorithm, the features are transformed and put into Feature Vectors, which are vectors of numbers representing the value for each feature. Below, a VectorAssembler is used to transform and return a new DataFrame with all of the feature columns in a vector column. <br>
+
+![alt text](https://github.com/Pkrish15/uber-datanalysis/blob/master/3.png)<br> <br>
+
+Create a KMeans Object, set the parameters to define the number of clusters and the maximum number of iterations to determine the clusters and then we fit our model to the input data.
+
+![alt text](https://github.com/Pkrish15/uber-datanalysis/blob/master/4.png)<br> <br>
+
+Output, Cluster Centers are displayed on the Google Map <br>
+![alt text](https://github.com/Pkrish15/uber-datanalysis/blob/master/5.png)<br> <br>
+
+Further Analysis of cluster <br>
+![alt text](https://github.com/Pkrish15/uber-datanalysis/blob/master/6.png)<br> <br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
    
    
  
