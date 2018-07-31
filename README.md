@@ -1,6 +1,17 @@
-# Uber-datanalysis and Prediction - First Phase
+# Data Discovery Phase  - First Phase
 #This Whole is Split into 2 Phases <br> <br>
-#First Phase is Uber-DataAnalysis using Spark MLLIB (KMeans Algorithms best suited)and Prediction using KMeans. <br>
+#The example data set is Uber trip data, which FiveThirtyEight obtained from the NYC Taxi & Limousine Commission. In this example, we will discover the clusters of Uber data based on the longitude and latitude, then we will analyze the cluster centers by date/time. The data set has the following schema:
+
+The Data Set Schema
+Date/Time: The date and time of the Uber pickup
+Lat: The latitude of the Uber pickup
+Lon: The longitude of the Uber pickup
+Base: The TLC base company affiliated with the Uber pickup
+​​The Data Records are in CSV format. An example line is shown below:
+
+2014-08-01 00:00:00,40.729,-73.9422,B02598
+
+
 #Second Phase is Rules Implementation using RHDM and Firing the rules to detect the Surge Prediction, it uses Kafka and Spark Streaming.<br>
 1) Implementation on Openshift <br>
    a) oc new-project pk-zp <br> <br>
