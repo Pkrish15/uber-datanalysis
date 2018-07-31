@@ -1,6 +1,13 @@
 # Data Discovery Phase  - First Phase
 # Analytics using the Data Model - Second Phase 
 It use Spark Streaming and Rules Implementation.WIP <br>
+# Where do we get these DataSets? <br>
+http://www.nyc.gov/html/tlc/html/about/trip_record_data.shtml <br>
+http://www.nyc.gov/html/tlc/downloads/pdf/data_dictionary_trip_records_green.pdf <br>
+http://data.beta.nyc/dataset/uber-trip-data-foiled-apr-sep-2014 <br>
+https://developer.uber.com/docs/businesses/data-automation/data-download <br>
+
+
 #  Detailed Explaination of the first phase - Data Discovery Phase
 
 1) Why this phase is needed? <br>
