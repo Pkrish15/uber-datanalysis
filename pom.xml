@@ -78,10 +78,64 @@
 				</configuration>
 			</plugin>
 			<plugin>
+    <artifactId>maven-jar-plugin</artifactId>
+    <version>3.1.0</version>
+    <configuration>
+        <archive>
+            <manifest>
+                <mainClass>com.redhat.gpte.Main</mainClass>
+                <addClasspath>true</addClasspath>
+                <classpathLayoutType>custom</classpathLayoutType>
+                <customClasspathLayout>lib/$${artifact.artifactId}-$${artifact.version}$${dashClassifier?}.$${artifact.extension}
+                </customClasspathLayout>
+            </manifest>
+        </archive>
+    </configuration>
+</plugin>
+<plugin>
+    <artifactId>maven-dependency-plugin</artifactId>
+    <version>2.3</version>
+    <configuration>
+        <outputDirectory>${project.build.directory}/lib</outputDirectory>
+    </configuration>
+    <executions>
+        <execution>
+            <phase>package</phase>
+            <goals>
+                <goal>copy-dependencies</goal>
+            </goals>
+        </execution>
+    </executions>
+</plugin>
+			<!-- <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-assembly-plugin</artifactId>
+                <version>3.1.0</version>
+                <configuration>
+                    <descriptorRefs>
+                        <descriptorRef>jar-with-dependencies</descriptorRef>
+                    </descriptorRefs>
+                    <archive>
+                        <manifest>
+                            <mainClass>com.redhat.gpte.Main</mainClass>
+                        </manifest>
+                    </archive>
+                </configuration>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>single</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin> -->
+			<!-- <plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>exec-maven-plugin</artifactId>
 				<version>1.6.0</version>
 				<configuration>
+				 <mainClass>com.redhat.gpte.Main</mainClass>
 					<executable>java</executable>
 					<arguments>
 						<argument>-Dlog4j.configuration=file:src/main/java/log4j.properties</argument>
@@ -89,8 +143,8 @@
 						<classpath />
 						<argument></argument>
 					</arguments>
-				</configuration>
-			</plugin>
+				 </configuration>
+			</plugin> -->
 		</plugins>
 	</build>
 
